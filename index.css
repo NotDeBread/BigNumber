@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bouncy2: cubic-bezier(0, 2, 0.8, 1);
+}
+
+body {
+  margin: 0;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.version {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title :nth-child(1) {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+#numberDisplay {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+#input {
+  background-color: rgb(15, 15, 15);
+  color: white;
+  border: none;
+  text-align: center;
+  padding: 5px;
+  width: 300px;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid rgb(50, 50, 50);
+  outline: rgb(50, 50, 50);
+  border-radius: 5px;
+
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+
+  transition: background-color ease-in-out 0.25s, outline var(--bouncy2) 0.25s,
+  width var(--bouncy2) 0.25s;
+}
+
+#input:hover {
+  width: 325px;
+}
+
+#input:focus {
+  outline: 2px solid rgb(50, 50, 50);
+  background-color: rgb(35, 35, 35);
+  width: 400px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+}
